@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flightpoll</title>
+	<link rel="stylesheet" href="CSS/STYLE.css">
+</head>
+<body>
+	<div class="container">
+    <header class="header">
+     <a href="index.html"class="Logo"> <img class="test-0-logo" alt="logo" src="Media/Logo.png"></a>
+     <button onclick="Func3()" class="test-0-nav-1">
+       <span class="text_but">Акции</span></a>
+     </button>
+     <button onclick="Func2()" class="test-0-nav-2">
+       <img src="Media/search-icon.png" class="icon" alt="search">
+       <span class="text_but">Поиск</span>
+     </button>
+     <button class="test-0-nav-4" onclick="Func()">
+      <script>
+        function Func() {
+  window.location.href = "login.html";
+}
+  function Func2() {
+  window.location.href = "#poisk";
+}
+function Func3() {
+  window.location.href = "#ac";
+}
+function Func4() {
+  window.location.href = "search.html";
+}
+</script>
+<img src="Media/user.png" class="icon">
+<span class="text_but">Личный кабинет</span>
+</button>
+</header>
+<section class="slider">
+  <input type="radio" id="s-1" name="slider-control" checked="checked">
+  <input type="radio" id="s-2" name="slider-control">
+  <input type="radio" id="s-3" name="slider-control">
+  <input type="radio" id="s-4" name="slider-control">
+  <input type="radio" id="s-5" name="slider-control">
+  <div class="js-slider">
+    <figure class="js-slider_item img-1">
+      <div class="js-slider_img">
+        <img class="c-img-w-full" src="Media/Logo.png" alt="">
+      </div>
+      <figcaption class="wo-caption">
+        <h3 class="wo-h3">
+          <div class="c-label">FLIGHT<div class="d-label">POOL</div></div>
+          <br class="view-sm mb-s">Самая адекватная авиалиния</h3>
+          <ul class="wo-credit">
+            <li>Работает с 2005 года</li>
+            <li>Международные рейсы</li>
+            <li>
+              <span class="c-txt-s">«Мы сближаем города, вы – живете там, где хотите».</span></li>
+            </ul>
+          </figcaption>
+        </figure>
+        <figure class="js-slider_item img-2">
+          <div class="js-slider_img">
+            <img class="c-img-h-full" src="Media/airplane.webp" alt=""></div>
+            <figcaption class="wo-caption">
+              <h3 class="wo-h3">ПРИНЦИПЫ НАКОПЛЕНИЯ БРОНИРОВАНИЯ</h3>
+              <ul class="wo-credit">
+                <li>1.Выбрать удобную дату перелета</li>
+                <li>2.Накопить больше 50% бронирований на рейс</li>
+                <li>3.Получить снижение стоимости</li></ul>
+              </figcaption>
+            </figure>
+            <figure class="js-slider_item img-3">
+              <div class="js-slider_img">
+                <img class="c-img-h-full" src="Media/persi.jpg" alt=""></div>
+                <figcaption class="wo-caption">
+                  <h3 class="wo-h3">РАННЕЕ БРОНИРОВАНИЕ</h3>
+                  <ul class="wo-credit">
+                    <li>Забронируйте авиабилеты заранее</li>
+                    <li>Чтобы получить доступ к наиболее выгодным тарифам и предложениям</li>
+                    <li></li></ul>
+                  </figcaption>
+                </figure>
+                <figure class="js-slider_item img-4">
+                  <div class="js-slider_img">
+                    <img class="c-img-h-full" src="Media/airvnutr.jpg" alt=""></div>
+                    <figcaption class="wo-caption">
+                      <h3 class="wo-h3">ГИБКОСТЬ В ДАТАХ</h3>
+                      <ul class="wo-credit">
+                        <li>Будьте гибкими в выборе дат вылета и прилета</li>
+                        <li>Чтобы использовать скидки и специальные предложения в не пиковые периоды</li>
+                        <li></li></ul>
+                      </figcaption>
+                    </figure>
+                    <figure class="js-slider_item img-5">
+                      <div class="js-slider_img">
+                        <img class="c-img-h-full" src="Media/Road-Trip.jpg" alt=""></div>
+                        <figcaption class="wo-caption">
+                          <h3 class="wo-h3">СРАВНЕНИЕ ЦЕН</h3>
+                          <ul class="wo-credit">
+                            <li>Исследуйте и сравнивайте цены на различных веб-сайтах и агрегаторах</li>
+                            <li>Чтобы найти самые выгодные предложения и специальные акции.</li>
+                            <li></li></ul>
+                          </figcaption>
+                        </figure>
+                        <div class="js-slider_nav">
+                          <label class="js-slider_nav_item s-nav-1 prev" for="s-5"></label>
+                          <label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
+                          <label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
+                          <label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
+                          <label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
+                          <label class="js-slider_nav_item s-nav-3 next" for="s-4"></label>
+                          <label class="js-slider_nav_item s-nav-4 prev" for="s-3"></label>
+                          <label class="js-slider_nav_item s-nav-4 next" for="s-5"></label>
+                          <label class="js-slider_nav_item s-nav-5 prev" for="s-4"></label>
+                          <label class="js-slider_nav_item s-nav-5 next" for="s-1"></label>
+                        </div>
+                        <div class="js-slider_indicator">
+                          <div class="js-slider-indi indi-1"></div>
+                          <div class="js-slider-indi indi-2"></div>
+                          <div class="js-slider-indi indi-3"></div>
+                          <div class="js-slider-indi indi-4"></div>
+                          <div class="js-slider-indi indi-5"></div>
+                        </div>
+                      </div>
+                    </section>
+                    <h3 class="position" id="poisk">Поиск билетов</h3>
+                    <div class="search-conteiner">
+                      <form action="search.html">
+                        <div class="items-text">
+                          <label for="1"  class="reisi">Откуда</label>
+                          <label for="2" class="data">Куда</label>
+                          <label for="3" class="ot_doma">Убывающий рейс</label>
+                          <label for="4" class="domoi">И обратно</label>
+                          <label for="5" class="chelicki">Кол-во пассажиров</label>
+                          <label for="6" class="chelicki"></label>
+                        </div>
+                        <div class="items">
+                          <select id="1" required class="test-0-fd ">
+                            <option > Москва</option>
+                            <option > Анкара</option>
+                            <option > Стамбул</option>
+                            <option > Краков</option>
+                          </select>
+                        </select>
+                        <select id="2"  required class="test-0-fa">
+                          <option > Москва</option>
+                          <option> Анкара</option>
+                          <option> Стамбул</option>
+                          <option > Краков</option>
+                        </select>
+                        <input id="3" required class="test-0-fdt" type="date" name="date"></li>
+                        <input id="4"  required class="test-0-fat" type="date" name="date"></li>
+                        <select id="5"  required class="test-0-fnp">
+                          <option > 1</option>
+                          <option> 2</option>
+                          <option> 3</option>
+                          <option> 4</option>
+                          <option> 5</option>
+                          <option> 6</option>
+                          <option> 7</option>
+                          <option> 8</option>
+                        </select>
+                        <div><img id="6"  alt="search" class="icon-new" src="Media/search-icon.png"><input required value="Поиск" type="submit" name="submit" class="test-0-fbs"></div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <h3 class="position" id="ac">Акции</h3>
+                <div class="sales">
+                  <div class="sale">
+                    <img src="Media/promotion1.jpg" alt="sale" class="test-0-ai">
+                    <div class="sale-text">
+                      <div class="test-0-an">
+                        <h3 class="test-0-an">Возврат и изменение ваших билетов </h3>
+                      </div>
+                      <div class="sale-info">
+                        <div class="test-0-ad">Пандемия изменила планы многих путешественников, но мы знаем, что она не будет длиться вечно.
+                          Как только все это закончится, мы продолжим исследовать этот мир так, как раньше.
+                          Специальные правила, разработанные для этой непростой ситуации, помогут вам отменить поездку или отложить на потом.
+                        </div>
+                      </div>
+                      <div class="sale-buttons">
+                        <button class="test-0-abm"><span class="button-sale-text">Просмотр
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="sale">
+                  <img src="Media/promotion2.jpg" alt="Pozd" class="test-0-ai">
+                  <div class="sale-text">
+                    <div class="test-0-an">
+                      <h3 class="test-0-an"> Лучшие предложения </h3>
+                    </div>
+                    <div class="sale-info">
+                      <div class="test-0-ad">Чтобы снова увидеть улицы, которые были свидетелями так много. Чтобы обнять своих любимых и оглянуться, чтобы увидетьчерез что вы прошли. И думать о новых мечтах, которые будут такими особенными!
+                      </div>
+                    </div>
+                    <div class="sale-buttons">
+                      <button class="test-0-abm"><span class="button-sale-text">Просмотр
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="sale">
+                <img src="Media/promotion3.jpg" alt="Pozd" class="test-0-ai">
+                <div class="sale-text">
+                  <div class="test-0-an">
+                    <h3 class="test-0-an"> Увидимся чаще </h3>
+                  </div>
+                  <div class="sale-info">
+                    <div class="test-0-ad">С начала января мы расширяем географию полетов по России, чтобы вы могли
+                      чаще видеться с любимыми. Выбирайте нашу компанию, чтобы лететь туда, где вас всегда ждут.
+                    </div>
+                  </div>
+                  <div class="sale-buttons">
+                    <button class="test-0-abm"><span class="button-sale-text">Просмотр
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="sale">
+              <img src="Media/promotion4.jpg" alt="Pozd" class="test-0-ai">
+              <div class="sale-text">
+                <div class="test-0-an">
+                  <h3 class="test-0-an"> Все снова включено </h3>
+                </div>
+                <div class="sale-info">
+                  <div class="test-0-ad">С 10 августа мы возобновим полеты в Турцию. Рейсы из Москвы в Анталию будут выполняться дважды
+                    в день ежедневно, а рейсы по маршруту Москва — Даламан будут выполняться от трех до семи раз в неделю.
+                  </div>
+                </div>
+                <div class="sale-buttons">
+                  <button class="test-0-abm"><span class="button-sale-text">Просмотр
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <h3 class="position" id="otz">Отзывы</h3>
+          <div class="container-feedback">
+            <ul class="feedback1">
+              <li class="feedback1-li"><img class="feedback-foto"src="Media/Goro.jpg"><span class="feedback-text">Данила Горо</span><span class="otziv-text"><div class="review">5/5</span><img class="otziv" src="Media/zvezda.svg"></div><div class="otziv-text2">"FlightPoll" - это впечатляющая авиакомпания, заслуживающая наивысшей оценки в 5 звезд. Плюсы этой компании не оставят вас равнодушными.
+                <br>
+                Плюсы:
+                <br>
+                Отличное обслуживание: Компания "FlightPoll" предлагает высокий уровень обслуживания, персонал дружелюбный и внимательный к потребностям пассажиров.
+                <br>
+                Надежность: Они придерживаются расписания, и мои рейсы с "FlightPoll" всегда отправлялись и прибывали вовремя.
+                <br>
+                Комфорт на борту: Самолеты "FlightPoll" оборудованы комфортабельными сиденьями и просторной кабиной, что создает приятную атмосферу во время полета.
+                <br>
+                Широкий выбор направлений: Компания предлагает множество пунктов назначения, что позволяет выбрать оптимальный маршрут для путешествия.
+                <br>
+                Хотя "FlightPoll" имеет много преимуществ, небольшой минус, который я заметил, - ограниченные варианты питания на борту. Больше вариантов или альтернативных меню для пассажиров с особыми диетическими требованиями было бы здорово.
+                <br>
+              В целом, "FlightPoll" является превосходной авиакомпанией, которую я с удовольствием рекомендую всем путешественникам.</div></li>
+
+              <li class="feedback1-li"><img class="feedback-foto"src="Media/six.jpg"><span class="feedback-text">Антон Шестёркин</span><span class="otziv-text"><div class="review">4/5</span><img class="otziv" src="Media/zvezda.svg"></div><div class="otziv-text2">Авиакомпания превзошла мои ожидания.<br> Изысканный сервис и вежливый персонал создали комфортную атмосферу на борту. Бортовое питание было высокого качества, и разнообразие вариантов порадовало. Система развлечений предлагала широкий выбор фильмов и музыки. Пунктуальность рейсов впечатлила.<br>Единственный небольшой недостаток – ограниченное пространство для ног. В целом, полет настолько приятный, что я рассмотрю эту авиакомпанию в качестве предпочтительного варианта в будущем.</div></li>
+
+              <li class="feedback1-li"><img class="feedback-foto"src="Media/adekvat.png"><span class="feedback-text">Влад Адекватный</span><span class="otziv-text"><div class="review">4.5/5</span><img class="otziv" src="Media/zvezda.svg"></div><div class="otziv-text2">Авиакомпания оставила приятное впечатление.<br> Полет прошел без задержек, обслуживание было высокого уровня. Персонал был внимателен и дружелюбен. Бортовое питание предложило разнообразные вкусные блюда. Система развлечений предоставила широкий выбор фильмов и музыки для развлечения во время полета. Сиденья были комфортными, но немного ограниченными в пространстве.<br> В целом, я остался доволен своим опытом и рассмотрю эту авиакомпанию как один из лучших вариантов для будущих полетов.</div></li>
+            </ul>
+            <ul class="feedback1">
+              <li class="feedback2-li"><img class="feedback-foto"src="Media/Platon.jpg"><span class="feedback-text">Дмитрий Душнилов</span><span class="otziv-text"><div class="review">5/5</span><img class="otziv" src="Media/zvezda.svg"></div><div class="otziv-text2">Полет с этой авиакомпанией был просто восхитительным.<br> От начала до конца я был окружен вниманием и заботой. Персонал проявлял искреннюю дружелюбность и готовность помочь. Сиденья были удобными, с достаточным пространством для ног. Бортовое питание было великолепным, с богатым выбором изысканных блюд. Система развлечений предлагала широкий спектр фильмов, музыки и игр. Важно отметить, что рейс был абсолютно пунктуальным. <br>Организация и профессионализм команды авиакомпании вызвали у меня полное доверие. Не могу не отметить их безопасность и чистоту на борту. <br>В целом, это был незабываемый полет, и я с радостью буду выбирать эту авиакомпанию для своих будущих путешествий. Они заслуживают самых высоких оценок и рекомендаций.</div></li>
+
+              <li class="feedback2-li"><img class="feedback-foto"src="Media/Elisey.jpg"><span class="feedback-text">Елисей Синяев</span><span class="otziv-text"><div class="review">5/5</span><img class="otziv" src="Media/zvezda.svg"></div><div class="otziv-text2">Это был просто идеальный полет. Обслуживание на самом высоком уровне, от заботы о каждой детали до внимания к каждому пассажиру. Персонал был профессиональным и дружелюбным, создавая атмосферу комфорта и радушия. Бортовое питание было изысканным и вкусным, с разнообразием выбора. Система развлечений предлагала широкий спектр фильмов, программ и игр, чтобы сделать полет еще более приятным. Сиденья были удобными, с достаточным пространством для комфортного путешествия. Пунктуальность рейса была высокой, и все прошло согласно расписанию. Все аспекты полета – от безопасности до чистоты – были на самом высоком уровне. Определенно лучшая авиакомпания, которую я когда-либо испытывал, и я с удовольствием буду выбирать их снова для моих будущих путешествий.</div></li>
+
+              <li class="feedback2-li"><img class="feedback-foto"src="Media/kazinak.jpg"><span class="feedback-text">Илья Казинаков</span><span class="otziv-text"><div class="review">5/5</span><img class="otziv" src="Media/zvezda.svg"></div><div class="otziv-text2">Отличный сервис, комфортный полет, вежливый персонал. Рекомендую!</div></li>
+            </ul>
+          </div>
+          <h3 class="position">Подписка на закрытые акции</h3>
+          <div class="podpiska">
+            <form>
+              <span class="close-sale-text">Почта</span>
+              <input class="test-0-sie" type="email" name="email">
+              <input class="test-0-sbs" type="submit" name="submit">
+            </form>
+          </div>
+          <footer class="footer">
+            <div class="container">
+              <div class="footer-block">
+                <a href="./index.html">
+                  <img src="Media/Logo.png" alt="logo" class="test-0-logo">
+                </a>
+                
+                <nav class="footer-nav">
+                  <a href="#" class="footer-link">Домой</a>
+                  <a href="login.html" class="footer-link">Войти</a>
+                  <a href="register.html " class="footer-link">Зарегистрироваться</a>
+                  <a href="#" class="footer-link">Контакты</a>
+                  <a href="#" class="footer-link">Новости</a>
+                  <a href="#" class="footer-link">Вернуться</a>
+                  <a href="#otz" class="footer-link">Отзывы</a>
+                  <a  class="footer-link">телефон “8 (800) 100-10-10”</a>
+                  
+                </nav>
+              </div>
+            </div>
+          </footer>
+        </body>
+        </html>

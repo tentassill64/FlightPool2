@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flightpoll</title>
+	<link rel="stylesheet" href="CSS/STYLE.css">
+
+</head>
+<body>
+	<div class="container">
+    <header class="header">
+     <a href="index.html"class="Logo"> <img class="test-0-logo" alt="logo" src="Media/Logo.png"></a>
+     <button class="test-0-nav-1">
+       <span class="text_but">Акции</span>
+     </button>
+     <button class="test-0-nav-2">
+       <img src="Media/search-icon.png" class="icon" alt="search">
+       <span class="text_but">Поиск</span>
+     </button>
+     <button class="test-0-nav-4"onclick="Func()">
+       <img src="Media/user.png" class="icon">
+       <span class="text_but">Личный кабинет</span>
+     </button>
+     <script >function Func() {
+  window.location.href = "login.html";
+}
+</script>
+   </header>
+ </div>
+ <div class="reg">
+   <form class="registration"id="reg-form" action="profile.html" method="GET">
+    <label for="name" class="reg-text">Имя</label>
+    <input type="text"  class="test-2-name but-reg" name="dataInput" id="dataInput" required	>
+    <label for="last" class="reg-text">Фамилия</label>
+    <input type="text"  class=".test-2-last but-reg" id="last" name="last" required> 	
+    <label for="Ndoc" class="reg-text">Номер документа</label>
+    <input type="text"  class="test-2-doc but-reg" id="Ndoc" required> 	
+    <label for="Ntel" class="reg-text">Телефон</label>
+    <input type="tel"  class="test-2-phone but-reg" id="Ntel" required> 
+    <label for="pass" class="reg-text">Пароль</label>
+    <input type="password"  class=".test-2-pass but-reg" id="pass" required>
+    <label for="pass2" class="reg-text">Повтор пароля</label>
+    <input type="password"  class=".test-2-pass2 but-reg" id="pass2" required> 	
+    <label for="sub" class="reg-text">Регистрация</label>
+    <input  type="submit"  class="test-2-btn but-reg" id="sub" value="Зарегистрироваться" onclick="saveData()"> 	
+  </form>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-block">
+      <a href="./index.html">
+        <img src="Media/Logo.png" alt="logo" class="test-0-logo">
+      </a>
+      <nav class="footer-nav">
+        <a href="#" class="footer-link">Домой</a>
+        <a href="#" class="footer-link">Войти</a>
+        <a href="#" class="footer-link">Зарегистрироваться</a>
+        <a href="#" class="footer-link">Контакты</a>
+        <a href="#" class="footer-link">Новости</a>
+        <a href="#" class="footer-link">Вернуться</a>
+        <a href="#" class="footer-link">Отзывы</a>
+        <a href="#" class="footer-link">телефон “8 (800) 100-10-10”</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+  document.getElementById('reg-form').addEventListener('submit', function(event) {
+    var password1 = document.getElementById('pass').value;
+    var password2 = document.getElementById('pass2').value;
+
+    if (password1.length < 7 || !(/[0-9]/.test(password1)) || !(/[!*$]/.test(password1))) {
+        alert('Пароль не соответствует требованиям! Введите другой пароль.');
+        event.preventDefault();
+    } else if (password1 !== password2) {
+        alert('Пароли не совпадают! Введите одинаковые пароли.');
+        event.preventDefault();
+    } else {
+
+        window.location.href = "profile.html";
+    }
+});
+</script>
+<script>
+  function saveData() {
+    const last = document.getElementById("last").value;
+    localStorage.setItem("last", last);
+    const name = document.getElementById("dataInput").value;
+    localStorage.setItem("name", name);
+  }
+</script>
+</body>
+</html>

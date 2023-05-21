@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flightpoll</title>
+  <link rel="stylesheet" href="CSS/STYLE.css">
+  <script type="text/javascript" src="js/js-prof.js"></script>
+</head>
+<body>
+  <div class="container">
+<header class="header">
+  <a href="index.html"class="Logo"> <img class="test-0-logo" alt="logo" src="Media/Logo.png"></a>
+    <button class="test-0-nav-1">
+      <span class="text_but">Акции</span>
+    </button>
+    <button class="test-0-nav-2">
+      <img src="Media/search-icon.png" class="icon" alt="search">
+      <span class="text_but">Поиск</span>
+    </button>
+    <button class="test-0-nav-4"onclick="Func()">
+       <img src="Media/user.png" class="icon">
+       <span class="text_but">Личный кабинет</span>
+     </button>
+     <script >function Func() {
+  window.location.href = "login.html";
+}
+</script>
+</header>
+</div>
+<div class="search-con">
+  <div class="search-card">
+      <img src="Media/A319-neo.jpg" alt="Pozd" class="search-image">
+      <div class="search-text">
+        <div class="search-heading">
+          <h3 class="search-title">  Анкара - Москва </h3>
+        </div>
+        <ul class="search-info">
+          <li class="test-4-fn">Номер рейса: 234</li>
+          <li class="test-4-at lol">Воздушное судно: Airbus A319neo</li>
+          <li class="test-4-dd lol"> Дата вылета: 23.05.2023</li>
+          <li class="test-4-at lol"> Время вылета: 22:30</li>
+          <li class="test-4-ft lol"> Время прилета: 4:30</li>
+          <li class="test-4-fp lol"> Время в пути: 6 часов </li>
+          <li class="test-4-fp lol"> Стоимость: 12900 рублей</li>
+          <li class="star"><button class="favorite-button">
+          <span class="star-icon"></span>
+          <li><button onclick="ToBooking()" class="test-4-bsb">Бронирование</button></li>
+         </button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="empty"></div>
+  <div class="search-con">
+  <div class="search-card">
+      <img src="Media/ATR-EVO.jpg" alt="Pozd" class="search-image">
+      <div class="search-text">
+        <div class="search-heading">
+          <h3 class="search-title">  Стамбул - Анкара </h3>
+        </div>
+        <ul class="search-info">
+          <li class="test-4-fn">Номер рейса: 176</li>
+          <li class="test-4-at lol">Воздушное судно: ATR EVO</li>
+          <li class="test-4-dd lol"> Дата вылета: 25.05.2023</li>
+          <li class="test-4-at lol"> Время вылета: 18:00</li>
+          <li class="test-4-ft lol"> Время прилета: 19:30</li>
+          <li class="test-4-fp lol"> Время в пути: 1.5 часа </li>
+          <li class="test-4-fp lol"> Стоимость: 6400 рублей</li>
+          <li class="star"><button class="favorite-button">
+          <span class="star-icon"></span>
+          <li><button onclick="ToBooking()" class="test-4-bsb">Бронирование</button></li>
+         </button></li>
+         </button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="empty"></div>
+ <div class="search-con">
+  <div class="search-card">
+      <img src="Media/777-9-f.jpg" alt="Pozd" class="search-image">
+      <div class="search-text">
+        <div class="search-heading">
+          <h3 class="search-title">  Москва - Краков </h3>
+        </div>
+        <ul class="search-info">
+          <li class="test-4-fn">Номер рейса: 534</li>
+          <li class="test-4-at lol">Воздушное судно: Boeing 777X</li>
+          <li class="test-4-dd lol"> Дата вылета: 27.05.2023</li>
+          <li class="test-4-at lol"> Время вылета: 20:00</li>
+          <li class="test-4-ft lol"> Время прилета: 3:00</li>
+          <li class="test-4-fp lol"> Время в пути: 7 часов </li>
+          <li class="test-4-fp lol"> Стоимость: 15800 рублей</li>
+          <li class="star"><button class="favorite-button">
+          <span class="star-icon"></span>
+          <li><button onclick="ToBooking()" class="test-4-bsb">Бронирование</button></li>
+         </button></li>
+         </button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="empty"></div>
+   <div class="search-con">
+  <div class="search-card">
+      <img src="Media/CR929.jpg" alt="Pozd" class="search-image">
+      <div class="search-text">
+        <div class="search-heading">
+          <h3 class="search-title">  Стамбул - Краков </h3>
+        </div>
+        <ul class="search-info">
+          <li class="test-4-fn">Номер рейса: 34</li>
+          <li class="test-4-at lol">Воздушное судно: CR929</li>
+          <li class="test-4-dd lol"> Дата вылета: 02.06.2023</li>
+          <li class="test-4-at lol"> Время вылета: 23:00</li>
+          <li class="test-4-ft lol"> Время прилета: 2:30</li>
+          <li class="test-4-fp lol"> Время в пути: 3.5 часа </li>
+          <li class="test-4-fp lol"> Стоимость: 10300 рублей</li>
+          <li class="star"><button class="favorite-button">
+          <span class="star-icon"></span>
+          <li><button onclick="ToBooking()" class="test-4-bsb">Бронирование</button></li>
+         </button></li>
+         </button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="empty"></div>
+   <div class="search-con">
+  <div class="search-card">
+      <img src="Media/COMAC-C919.jpg" alt="Pozd" class="search-image">
+      <div class="search-text">
+        <div class="search-heading">
+          <h3 class="search-title">  Москва - Стамбул </h3>
+        </div>
+        <ul class="search-info">
+          <li class="test-4-fn">Номер рейса: 6</li>
+          <li class="test-4-at lol">Воздушное судно: Comac C919</li>
+          <li class="test-4-dd lol"> Дата вылета: 05.06.2023</li>
+          <li class="test-4-at lol"> Время вылета: 12:30</li>
+          <li class="test-4-ft lol"> Время прилета: 18:00</li>
+          <li class="test-4-fp lol"> Время в пути: 6.5 часа </li>
+          <li class="test-4-fp lol"> Стоимость: 15100 рублей</li>
+          <li class="star"><button class="favorite-button">
+          <span class="star-icon"></span>
+          <li><button onclick="ToBooking()" class="test-4-bsb">Бронирование</button></li>
+         </button></li>
+         </button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="empty"></div>
+   <div class="search-con">
+  <div class="search-card">
+      <img src="Media/fokker-f27.jpg" alt="Pozd" class="search-image">
+      <div class="search-text">
+        <div class="search-heading">
+          <h3 class="search-title">  Анкара - Краков </h3>
+        </div>
+        <ul class="search-info">
+          <li class="test-4-fn">Номер рейса: 98</li>
+          <li class="test-4-at lol">Воздушное судно: Fokker F27</li>
+          <li class="test-4-dd lol"> Дата вылета: 09.06.2023</li>
+          <li class="test-4-at lol"> Время вылета: 15:00</li>
+          <li class="test-4-ft lol"> Время прилета: 20:00</li>
+          <li class="test-4-fp lol"> Время в пути: 5 часов </li>
+          <li class="test-4-fp lol"> Стоимость: 8300 рублей</li>
+          <li class="star"><button class="favorite-button">
+          <span class="star-icon"></span>
+          <li><button onclick="ToBooking()" class="test-4-bsb">Бронирование</button></li>
+         </button></li>
+         </button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="empty"></div>
+   <div class="search-con">
+  <div class="search-card">
+      <img src="Media/avro-rj-f.jpg" alt="Pozd" class="search-image">
+      <div class="search-text">
+        <div class="search-heading">
+          <h3 class="search-title">  Москва - Анкара </h3>
+        </div>
+        <ul class="search-info">
+          <li class="test-4-fn">Номер рейса: 13</li>
+          <li class="test-4-at lol">Воздушное судно: Avro RJ</li>
+          <li class="test-4-dd lol"> Дата вылета: 13.06.2023</li>
+          <li class="test-4-at lol"> Время вылета: 13:30</li>
+          <li class="test-4-ft lol"> Время прилета: 17:30</li>
+          <li class="test-4-fp lol"> Время в пути: 5 часов </li>
+          <li class="test-4-fp lol"> Стоимость: 12000 рублей</li>
+          <li class="star"><button class="favorite-button">
+          <span class="star-icon"></span>
+          <li><button onclick="ToBooking()" class="test-4-bsb">Бронирование</button></li>
+         </button></li>
+         </button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="empty"></div>
+   <div class="search-con">
+  <div class="search-card">
+      <img src="Media/bae-146-f.jpg" alt="Pozd" class="search-image">
+      <div class="search-text">
+        <div class="search-heading">
+          <h3 class="search-title">  Краков - Стамбул </h3>
+        </div>
+        <ul class="search-info">
+          <li class="test-4-fn">Номер рейса: 54</li>
+          <li class="test-4-at lol">Воздушное судно: BAe 146</li>
+          <li class="test-4-dd lol"> Дата вылета: 16.06.2023</li>
+          <li class="test-4-at lol"> Время вылета: 19:00</li>
+          <li class="test-4-ft lol"> Время прилета: 2:00</li>
+          <li class="test-4-fp lol"> Время в пути: 6 часов </li>
+          <li class="test-4-fp lol"> Стоимость: 21300 рублей</li>
+          <li class="star"><button class="favorite-button">
+          <span class="star-icon"></span>
+          <li><button onclick="ToBooking()" class="test-4-bsb">Бронирование</button></li>
+         </button></li>
+         </button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="empty"></div>
+   <div class="search-con">
+  <div class="search-card">
+      <img src="Media/747SP-f.jpg" alt="Pozd" class="search-image">
+      <div class="search-text">
+        <div class="search-heading">
+          <h3 class="search-title">  Стамбул - Москва </h3>
+        </div>
+        <ul class="search-info">
+          <li class="test-4-fn">Номер рейса: 88</li>
+          <li class="test-4-at lol">Воздушное судно: Boeing 747SP</li>
+          <li class="test-4-dd lol"> Дата вылета: 20.06.2023</li>
+          <li class="test-4-at lol"> Время вылета: 17:00</li>
+          <li class="test-4-ft lol"> Время прилета: 24:00</li>
+          <li class="test-4-fp lol"> Время в пути: 7 часов </li>
+          <li class="test-4-fp lol"> Стоимость: 13000 рублей</li>
+          <li class="star"><button class="favorite-button">
+          <span class="star-icon"></span>
+          <li><button onclick="ToBooking()" class="test-4-bsb">Бронирование</button></li>
+         </button></li>
+         </button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">
+ const favoriteButtons = document.querySelectorAll('.favorite-button');
+
+favoriteButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    this.classList.toggle('clicked');
+  });
+});
+  </script>
+
+   <div class="empty"></div>
+ <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <a href="./index.html">
+      <img src="Media/Logo.png" alt="logo" class="test-0-logo">
+        </a>
+        <nav class="footer-nav">
+          <a href="#" class="footer-link">Домой</a>
+          <a href="#" class="footer-link">Войти</a>
+          <a href="#" class="footer-link">Зарегистрироваться</a>
+          <a href="#" class="footer-link">Контакты</a>
+          <a href="#" class="footer-link">Новости</a>
+          <a href="#" class="footer-link">Вернуться</a>
+          <a href="#" class="footer-link">Отзывы</a>
+          <a href="#" class="footer-link">телефон “8 (800) 100-10-10”</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+<script type="text/javascript">
+  function ToBooking() {
+  window.location.href = "booking.html";
+}
+</script>
+</body>
+</html>

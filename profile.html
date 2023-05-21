@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flightpoll</title>
+	<link rel="stylesheet" href="CSS/STYLE.css">
+	<script type="text/javascript" src="js/js-prof.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<a href="index.html"class="Logo"> <img class="test-0-logo" alt="logo" src="Media/Logo.png"></a>
+			<button class="test-0-nav-1">
+				<span class="text_but">Акции</span>
+			</button>
+			<button class="test-0-nav-2">
+				<img src="Media/search-icon.png" class="icon" alt="search">
+				<span class="text_but">Поиск</span>
+			</button>
+			<button class="test-0-nav-4"onclick="Func()">
+       <img src="Media/user.png" class="icon">
+       <span class="text_but">Личный кабинет</span>
+     </button>
+     <script >function Func() {
+  window.location.href = "login.html";
+}
+</script>
+		</header>
+		<div class="prof-container">
+			<h3 class="prof-main-text">Личный кабинет</h3>
+			<div class="prof-img-container"><ul class="ul-prof-text">
+				<li><img class="prof-imagine" src="Media/profile-icon.png"></li>
+				<li class="prof-name"><span class="test-3-name" id="output"></span></li>
+				<li class="prof-name"><span class="test-3-last " id="output2"></span></li>
+				<li class="prof-fly"><span class=".test-3-num " id="pol"></span></li>
+			</ul>
+		</div>
+		<form onsubmit="returnToIndex(); event.preventDefault(); ">
+			<input type="submit" class="test-3-logout" value="Выйти">
+		</form>
+		<h3 class="h3-info">Ваши рейсы</h3>
+		<div class="poleti-container">
+			<div class="first-reis">
+				<img src="Media/reis-img.jpg" alt="Pozd" class="img-polet">
+				<div class="card-text">
+					<div class="card-heading">
+						<h3 class="test-3-from test-3-to"> Сабихи Гёкчен --- Эсенбога </h3>
+					</div>
+					<div class="card-info">
+						<div class="test-3-code" id="doc"></div>
+						<div class="test-3-t1" id="kogda"></div>
+						<div class="test-3-t2" id="togda"></div>
+					</div>
+				</div>
+			</div>
+			<div class="first-reis">
+				<img src="Media/airport.jpg" alt="Pozd" class="img-polet">
+				<div class="card-text">
+					<div class="card-heading">
+						<h3 class="test-3-from test-3-to"> 	Аэропорт Пудун  --- Аэропорт Схипхол </h3>
+					</div>
+					<div class="card-info">
+						<div class="test-3-code" id="doc1">Код бронирования:52156</div>
+						<div class="test-3-t1" id="kogda">Дата вылета: 24.05.2023</div>
+						<div class="test-3-t2" id="togda">Дата прилета: 16.06.2023</div>
+					</div>
+				</div>
+			</div>
+			<div class="first-reis">
+				<img src="Media/original.jpg" alt="Pozd" class="img-polet">
+				<div class="card-text">
+					<div class="card-heading">
+						<h3 class="test-3-from test-3-to"> Аэропорт Франкфурта  --- Аэропорт Хитроу   </h3>
+					</div>
+					<div class="card-info">
+						<div class="test-3-code" id="doc2">Код бронирования:15615</div>
+						<div class="test-3-t1" id="kogda">Дата вылета: 27.07.2023</div>
+						<div class="test-3-t2" id="togda">Дата прилета: 05.08.2023</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-block">
+				<a href="./index.html">
+					<img src="Media/Logo.png" alt="logo" class="test-0-logo">
+				</a>
+				<nav class="footer-nav">
+					<a href="#" class="footer-link">Домой</a>
+					<a href="#" class="footer-link">Войти</a>
+					<a href="#" class="footer-link">Зарегистрироваться</a>
+					<a href="#" class="footer-link">Контакты</a>
+					<a href="#" class="footer-link">Новости</a>
+					<a href="#" class="footer-link">Вернуться</a>
+					<a href="#" class="footer-link">Отзывы</a>
+					<a href="#" class="footer-link">телефон “8 (800) 100-10-10”</a>
+				</nav>
+			</div>
+		</div>
+	</footer>
+	<script>
+		window.onload = function() {
+			const savedData = localStorage.getItem("last");
+			document.getElementById("output2").textContent = savedData;
+			const savedData2 = localStorage.getItem("name");
+			document.getElementById("output").textContent = savedData2;
+		}
+	</script>
+	<script>
+		function returnToIndex() {
+			window.location.href = "index.html";
+		}
+	</script>
+</body>
+</html>

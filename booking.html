@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flightpoll</title>
+	<link rel="stylesheet" href="CSS/STYLE.css">
+	
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<a href="index.html"class="Logo"> <img class="test-0-logo" alt="logo" src="Media/Logo.png"></a>
+			<button class="test-0-nav-1">
+				<span class="text_but">Акции</span>
+			</button>
+			<button class="test-0-nav-2">
+				<img src="Media/search-icon.png" class="icon" alt="search">
+				<span class="text_but">Поиск</span>
+			</button>
+			<button class="test-0-nav-4"onclick="Func()">
+       <img src="Media/user.png" class="icon">
+       <span class="text_but">Личный кабинет</span>
+     </button>
+     <script >function Func() {
+  window.location.href = "login.html";
+}
+</script>
+		</header>
+		<div class="Book-con">
+		<div class="search-con">
+  <div class="search-card">
+      <img src="Media/A319-neo.jpg" alt="Pozd" class="search-image">
+      <div class="search-text">
+        <div class="search-heading">
+          <h3 class="search-title test-5-fcity test-5-tcity">  Анкара - Москва </h3>
+        </div>
+        <ul class="search-info">
+          <li class="test-5-fc">Номер рейса: 234</li>
+          <li class="test-5-from lol">Аэропорт вылета: Аэропорт Etimesgut</li>
+          <li class="test-5-dd lol"> Дата вылета: 23.05.2023</li>
+          <li class="test-5-dt lol"> Время вылета: 22:30</li>
+          <li class="test-5-at lol"> Время прилета: 4:30</li>
+          <li class="test-5-to lol"> Аэропорт прилета: Аэропорт Домодедово </li>
+          <li class="test-5-fp lol">Стоимость: 12900 рублей </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div>
+  	<div class="book-buts">
+  <div class="passenger-buttons">
+    <button class="" id="add-passenger-btn">Добавить пассажира</button>
+    <button class="" id="remove-passenger-btn" disabled>Удалить пассажира</button>
+      </div>
+    <div id="total-price"></div>
+    </div>
+  </div>
+<div id="book-container"></div>
+  </div>
+  <button class="test-5-book" onclick="ToLogin()">Забронировать</button>
+  </div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-block">
+					<a href="./index.html">
+						<img src="Media/Logo.png" alt="logo" class="test-0-logo">
+					</a>
+					<nav class="footer-nav">
+						<a href="#" class="footer-link">Домой</a>
+						<a href="#" class="footer-link">Войти</a>
+						<a href="#" class="footer-link">Зарегистрироваться</a>
+						<a href="#" class="footer-link">Контакты</a>
+						<a href="#" class="footer-link">Новости</a>
+						<a href="#" class="footer-link">Вернуться</a>
+						<a href="#" class="footer-link">Отзывы</a>
+						<a href="#" class="footer-link">телефон “8 (800) 100-10-10”</a>
+					</nav>
+				</div>
+			</div>
+		</footer>
+	</script>
+
+    <script>
+    var container = document.getElementById("book-container");
+    var addButton = document.getElementById("add-passenger-btn");
+    var removeButton = document.getElementById("remove-passenger-btn");
+    var totalPriceElement = document.getElementById("total-price");
+
+    var passengerCount = 0;
+    var maxPassengers = 8;
+    var ticketPrice = 12900;
+
+    addButton.addEventListener("click", function() {
+      if (passengerCount < maxPassengers) {
+        var passengerContainer = document.createElement("div");
+        passengerContainer.classList.add("passenger-container");
+
+        var labels = ["Имя", "Фамилия", "Дата рождения", "Номер документа"];
+        var classNames = ["test-5-name", "test-5-last", "test-5-dob", "test-5-doc"];
+
+        for (var i = 0; i < 4; i++) {
+          var label = document.createElement("label");
+          label.classList.add("passenger-label");
+          label.textContent = labels[i];
+          passengerContainer.appendChild(label);
+
+          var input = document.createElement("input");
+          input.classList.add("passenger-input");
+          input.classList.add(classNames[i]);
+          input.type = "text";
+          passengerContainer.appendChild(input);
+        }
+
+        container.appendChild(passengerContainer);
+
+        passengerCount++;
+
+        if (passengerCount === maxPassengers) {
+          addButton.disabled = true;
+        }
+
+        removeButton.disabled = false;
+
+        updateTotalPrice();
+      }
+    });
+
+    removeButton.addEventListener("click", function() {
+      var passengerContainers = document.getElementsByClassName("passenger-container");
+      var lastPassengerContainer = passengerContainers[passengerContainers.length - 1];
+
+      if (lastPassengerContainer) {
+        container.removeChild(lastPassengerContainer);
+        passengerCount--;
+
+        addButton.disabled = false;
+
+        if (passengerCount === 0) {
+          removeButton.disabled = true;
+        }
+
+        updateTotalPrice();
+      }
+    });
+
+    function updateTotalPrice() {
+      var totalPrice = passengerCount * ticketPrice;
+      totalPriceElement.textContent = "Финальная стоимость: " + totalPrice.toLocaleString() + " рублей";
+    }
+</script>
+<script>
+	function ToLogin() {
+  window.location.href = "login.html";
+}
+</script>
+</body>
+</html>
